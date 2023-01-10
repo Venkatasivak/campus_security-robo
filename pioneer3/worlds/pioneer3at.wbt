@@ -1,0 +1,810 @@
+#VRML_SIM R2023a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/appearances/protos/SandyGround.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/robots/adept/pioneer3/protos/Pioneer3at.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/devices/sick/protos/SickLms291.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/apartment_structure/protos/Wall.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/living_room_furniture/protos/Armchair.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/chairs/protos/OfficeChair.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/chairs/protos/WoodenChair.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/tables/protos/Desk.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/tables/protos/RoundTable.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/garden/protos/TableWithUmbrella.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/cabinet/protos/Cabinet.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/garden/protos/PicketFenceWithDoor.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/garden/protos/PicketFence.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/samples/contests/robocup/protos/RobocupSoccerField.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/balls/protos/FifaSoccerBall.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/humans/pedestrian/protos/Pedestrian.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/computers/protos/Laptop.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/vehicles/protos/generic/MotorbikeSimple.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/vehicles/protos/tesla/TeslaModel3.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/vehicles/protos/lincoln/LincolnMKZ.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/vehicles/protos/range_rover/RangeRoverSportSVR.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/garden/protos/Pergolas.proto"
+
+WorldInfo {
+  info [
+    "Pioneer 3AT robot (Adept MobileRobots)."
+    "This all terrain four wheels drive robot is  equipped with a Sick LMS 291 lidar."
+    "It is programmed to perform a simple obstacle avoidance behavior based on the sensor data measured by the lidar."
+  ]
+  title "Pioneer 3AT"
+  lineScale 0.5
+}
+Viewpoint {
+  orientation -0.24752514862811434 0.22166701589794452 0.943183457689717 1.7388416996147702
+  position 2.6451308863632175 2.086814388405188 10.46772132978154
+  follow "Pioneer 3-AT"
+  followSmoothness 0
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  translation 0 -0.08 0
+  rotation 0 1 0 0
+  floorSize 60 60
+  floorTileSize 3 3
+  floorAppearance SandyGround {
+    colorOverride 0.403922 0.439216 0.498039
+  }
+  wallThickness 0.2
+  wallHeight 0.8
+  wallAppearance PBRAppearance {
+    baseColor 0.333333 1 0.498039
+    baseColorMap ImageTexture {
+      url [
+        "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/default/worlds/textures/gray_brick_wall.jpg"
+      ]
+    }
+    roughness 1
+    metalness 0
+    textureTransform TextureTransform {
+      scale 56 28
+    }
+  }
+}
+RectangleArena {
+  translation 0 -0.08 0
+  rotation 0 1 0 0
+  name "rectangle arena(1)"
+  floorSize 60 60
+  floorTileSize 3 3
+  floorAppearance SandyGround {
+    colorOverride 0.403922 0.439216 0.498039
+  }
+  wallThickness 0.2
+  wallHeight 0.8
+  wallAppearance PBRAppearance {
+    baseColor 0.333333 1 0.498039
+    baseColorMap ImageTexture {
+      url [
+        "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/default/worlds/textures/gray_brick_wall.jpg"
+      ]
+    }
+    roughness 1
+    metalness 0
+    textureTransform TextureTransform {
+      scale 56 28
+    }
+  }
+}
+Pergolas {
+  translation 25.66 4.17 0
+}
+RangeRoverSportSVR {
+  hidden position_0_0 3.634022051709008e-11
+  hidden position2_0_0 1.6985778346944095e-06
+  hidden position_0_1 -1.279897649707012e-10
+  hidden position2_0_1 1.714674949929027e-06
+  hidden position_0_2 5.546897763290403e-07
+  hidden position_0_3 5.523252779715407e-07
+  hidden linearVelocity_0 -3.471575198964444e-14 1.006177433771115e-14 5.174014303419325e-16
+  hidden angularVelocity_0 -2.997201986932323e-17 -1.8283977867283182e-16 1.611524557464634e-15
+  hidden translation_1 0 0 0
+  hidden rotation_1 -0.9999999997711377 1.8170110254386585e-11 -2.1394498248178537e-05 1.698470932099275e-06
+  hidden linearVelocity_1 2.7722248232381756e-14 -2.691282267616221e-14 4.591250096709202e-16
+  hidden angularVelocity_1 3.2075064960242695e-17 -6.494271277828304e-18 4.303872673279732e-17
+  hidden translation_2 0 0 0
+  hidden rotation_2 0.9999999972141553 6.39948823070708e-11 7.464374785402207e-05 1.7146050767472942e-06
+  hidden linearVelocity_2 2.5156852224663697e-14 -2.67796622493013e-14 -3.68066882577944e-16
+  hidden angularVelocity_2 9.147405100631624e-19 9.944148985068703e-16 3.055789418847144e-17
+  hidden translation_3 0 0 0
+  hidden rotation_3 -1 0 0 5.543552409928541e-07
+  hidden linearVelocity_3 -6.877292572940127e-15 1.9497744418487682e-14 4.3295962701412036e-16
+  hidden angularVelocity_3 3.33666350182575e-15 -1.198609435587125e-15 2.499592357289581e-17
+  hidden translation_4 0 0 0
+  hidden rotation_4 1 0 0 5.519467347101031e-07
+  hidden linearVelocity_4 -3.682459432053472e-15 2.251712950564691e-14 -6.47757755735018e-16
+  hidden angularVelocity_4 -1.944911883915605e-15 7.951242185153835e-16 1.523111585198606e-17
+  translation 19.20069946135245 -15.605189705877986 0.18015185495416802
+  rotation -0.01251459392732489 0.012509612233426134 0.9998434350140042 1.5713510540303293
+  name "vehicle(5)"
+}
+TeslaModel3 {
+  hidden translation_1 0 0 0
+  hidden rotation_1 0.061758719771710935 0.9961720168977175 -0.06186415183361939 4.708547419659665
+  hidden translation_2 0 0 0
+  hidden rotation_2 0.7054689640448814 0.06797039123182601 -0.7054740014240315 3.2772158170969496
+  hidden translation_3 0 0 0
+  hidden rotation_3 0.01509862361630895 -0.9997720056486799 -0.015098618682156617 1.571024020344016
+  hidden translation_4 0 0 0
+  hidden rotation_4 0.00021699607880020929 -0.999999952912716 -0.00021699600788700985 1.570796047087285
+  translation 20.07104296009818 -22.694393896146188 0.1715056560655896
+  rotation 0.007777700533832876 -0.012276275213335868 0.9998943946444007 1.1296317648992928
+  name "vehicle(1)"
+}
+TeslaModel3 {
+  hidden translation_1 0 0 0
+  hidden rotation_1 -0.296116246759931 -0.9080936934165226 0.2961097978486197 1.6670524535663391
+  hidden translation_2 0 0 0
+  hidden rotation_2 0.1104908175523682 -0.9877131141788555 -0.11051960602407321 1.5831619435345579
+  hidden translation_3 0 0 0
+  hidden rotation_3 0.003872275212604983 -0.9999850053771587 -0.0038722739471654093 1.5708109947352609
+  hidden translation_4 0 0 0
+  hidden rotation_4 -0.0009410307900525548 -0.9999991144609494 0.0009410304825285453 1.5707968855394425
+  translation 15.619983583006835 -23.53052227007292 0.1715093154258994
+  rotation 0.007777341938901709 -0.0065790497130245465 0.9999481131824985 1.737394771941113
+  color 0 0 1
+  name "vehicle(2)"
+}
+LincolnMKZ {
+  hidden translation_1 0 0 0
+  hidden rotation_1 -0.9999979163380648 1.377944674670265e-09 -0.0020414013639418636 1.3500155988820004e-06
+  hidden translation_2 0 0 0
+  hidden rotation_2 0.9999972336406753 -1.3755894210010923e-09 -0.002352171549214359 1.1695275825470008e-06
+  hidden translation_3 0 0 0
+  hidden rotation_3 -1 0 0 1.1611437641846199e-06
+  hidden translation_4 0 0 0
+  hidden rotation_4 1 0 0 9.798575772508241e-07
+  translation 25.668046121455603 -23.61482645524211 0.21027693269630263
+  rotation -0.0024702930854908997 0.0018971226081072596 0.9999951492771761 1.832587086322762
+  name "vehicle(3)"
+}
+LincolnMKZ {
+  hidden translation_1 0 0 0
+  hidden rotation_1 -0.9999987984168657 1.377825826011414e-09 -0.0015502144447719147 1.7776779284485854e-06
+  hidden translation_2 0 0 0
+  hidden rotation_2 0.9999985166842917 -1.3755209078514783e-09 -0.0017223905527566203 1.597137571212604e-06
+  hidden translation_3 0 0 0
+  hidden rotation_3 -1 0 0 1.5413880993111219e-06
+  hidden translation_4 0 0 0
+  hidden rotation_4 1 0 0 1.3605013144628462e-06
+  translation 27.18834031609292 -16.6434061056229 0.21027693269725217
+  rotation -0.0024702930874816956 0.0018971246650172169 0.9999951492732689 1.8325860368587215
+  color 1 0.333333 0
+  name "vehicle(4)"
+}
+Laptop {
+  hidden translation_1 -0.1 -0.007541759179467582 0.13059914891647148
+  hidden rotation_1 0.5663030611702278 -0.5988076297286188 -0.5663305267138815 2.062657740924332
+  translation 0.06572894803033581 0.04495064080248129 0.014352372311480979
+  rotation 0.33874053016249933 -0.9406398045191177 0.021251150073941932 0.054464498001474085
+}
+RobocupSoccerField {
+  translation 17.34 19.01 0
+}
+FifaSoccerBall {
+  translation 16.988166915569014 -19.450194047513083 0.12182517537222602
+  rotation 0.9780030623864047 0.2065585575395472 0.029044315622787517 2.7844421872971536
+}
+Pedestrian {
+  translation 5.62 1.94 1.27
+  rotation 0 0 1 1.5708
+  shirtColor 1 1 0
+}
+Pedestrian {
+  translation 6.12 18.84 1.28
+  rotation 0 0 1 1.5708
+  name "pedestrian(20)"
+  shirtColor 1 1 0
+}
+Pedestrian {
+  translation 3.46 18.84 1.23
+  rotation 0 0 1 -2.3561953071795863
+  name "pedestrian(21)"
+  shirtColor 1 1 0
+}
+Pedestrian {
+  translation 8.57 1.92 1.31
+  rotation 0 0 1 1.5708
+  name "pedestrian(17)"
+  shirtColor 1 1 0
+}
+Pedestrian {
+  translation 7.55 1.89 1.34
+  rotation 0 0 1 1.5708
+  name "pedestrian(1)"
+  shirtColor 0 0 1
+}
+Pedestrian {
+  translation 4.58 2.12 1.35
+  rotation 0 0 1 1.5708
+  name "pedestrian(18)"
+  shirtColor 0 0 1
+}
+Pedestrian {
+  translation 4.05 21.2 1.22
+  rotation 0 0 1 1.5708
+  name "pedestrian(19)"
+  shirtColor 0 0 1
+}
+Pedestrian {
+  translation 1.32 20.25 1.24
+  rotation 0 0 1 -1.5707953071795862
+  name "pedestrian(22)"
+  shirtColor 0 0 1
+}
+Pedestrian {
+  translation -2.93 19.85 1.29
+  rotation 0 0 1 1.5708
+  name "pedestrian(2)"
+  shirtColor 0.333333 0.666667 0.498039
+  pantsColor 0.192157 0.501961 0.270588
+}
+Pedestrian {
+  translation -5.05 16.33 1.3
+  rotation 0 0 1 1.5708
+  name "pedestrian(3)"
+  shirtColor 0.105882 0.0901961 0.54902
+}
+Pedestrian {
+  translation -18.94 4.9 1.32
+  rotation 0 0 1 1.5708
+  name "pedestrian(7)"
+  shirtColor 1 0.666667 1
+}
+Pedestrian {
+  translation -5.34 4.9 1.26
+  rotation 0 0 1 1.5708
+  name "pedestrian(8)"
+  pantsColor 0.333333 1 1
+}
+Pedestrian {
+  translation -2.32 -5.15998 1.26
+  rotation 0 0 1 1.5708
+  name "pedestrian(9)"
+  shirtColor 1 0 0
+}
+Pedestrian {
+  translation 11.97 -4.46 1.26
+  rotation 0 0 1 1.5708
+  name "pedestrian(10)"
+  shirtColor 0 0 1
+}
+Pedestrian {
+  translation -17.9 -18.78 1.26
+  rotation 0 0 1 1.5708
+  name "pedestrian(11)"
+  shirtColor 1 0.333333 0
+}
+Pedestrian {
+  translation 10.45 -17.49 1.26
+  rotation 0 0 1 1.5708
+  name "pedestrian(12)"
+  shirtColor 0.666667 0 1
+}
+Pedestrian {
+  translation -26.29 -22.67 1.22
+  rotation 0 0 1 1.5708
+  name "pedestrian(13)"
+}
+Pedestrian {
+  translation -17.28 -22.67 1.26
+  rotation 0 0 1 1.5708
+  name "pedestrian(14)"
+}
+Pedestrian {
+  translation -4.18 -22.67 1.27
+  rotation 0 0 1 1.5708
+  name "pedestrian(15)"
+}
+Pedestrian {
+  translation -22.44 16.11 1.28
+  rotation 0 0 1 1.5708
+  name "pedestrian(4)"
+  shirtColor 0.333333 0.333333 0
+}
+Pedestrian {
+  translation 22.71 5.47 1.39
+  rotation 0 0 1 2.3562
+  name "pedestrian(23)"
+  shirtColor 0.333333 0.333333 0
+}
+Pedestrian {
+  translation -9.62 25.94 1.24
+  rotation 0 0 1 1.5708
+  name "pedestrian(5)"
+  shirtColor 0.54902 0.54902 0.2
+  pantsColor 1 1 0.498039
+}
+Pedestrian {
+  translation -22.56 25.94 1.28
+  rotation 0 0 1 -2.8797853071795863
+  name "pedestrian(6)"
+  shirtColor 1 1 1
+}
+PicketFenceWithDoor {
+  translation 0 -17.54 0
+}
+PicketFence {
+  translation 0 -11.37 0
+}
+PicketFence {
+  translation 0 -9.78 0
+  name "picket fence(2)"
+}
+PicketFence {
+  translation 0 -1.79 0
+  name "picket fence(3)"
+}
+PicketFence {
+  translation 0 -0.08 0
+  name "picket fence(4)"
+}
+PicketFence {
+  translation 0 1.57 0
+  name "picket fence(5)"
+}
+TableWithUmbrella {
+  translation 11.42 -14.36 0
+  name "table with umbrella(1)"
+}
+TableWithUmbrella {
+  translation -4.4 -26.94 0
+  name "table with umbrella(6)"
+}
+TableWithUmbrella {
+  translation -26.89 -26.27 0
+  name "table with umbrella(2)"
+}
+WoodenChair {
+  translation -6.62 28.59 0
+  rotation 0 0 1 3.14159
+}
+WoodenChair {
+  translation -4.25 28.59 0
+  rotation 0 0 1 3.14159
+  name "wooden chair(7)"
+}
+Desk {
+  translation -8.8 27.46 0
+}
+Desk {
+  translation 8.04 3.47 0
+  rotation 0 0 1 -1.5707953071795862
+  name "desk(2)"
+}
+Desk {
+  translation 5.07 3.47 0
+  rotation 0 0 1 -1.5707953071795862
+  name "desk(3)"
+}
+Desk {
+  translation -27.31 18.56 0
+  name "desk(1)"
+}
+RoundTable {
+  translation -25.01 3.83 0
+}
+RoundTable {
+  translation -4.55 12.18 0
+  name "round table(2)"
+}
+RoundTable {
+  translation -2.51 3.4 0
+  name "round table(5)"
+}
+RoundTable {
+  translation -28.54 28.92 0
+  name "round table(4)"
+}
+Cabinet {
+  hidden translation_7 -5.073578876383709e-14 0 0
+  hidden rotation_7 0 0 1 0
+  hidden translation_11 -3.825231595861108e-14 0 0
+  hidden rotation_11 0 0 1 0
+  hidden translation_15 0 0 0
+  hidden translation_23 0 0 0
+  hidden translation_31 0 0 0
+  hidden translation_39 0 0 0
+  translation -12.28 28.13 0
+  rotation 0 0 1 -1.5707953071795862
+}
+WoodenChair {
+  translation -6.62 27.17 0
+  rotation 0 0 1 3.14159
+  name "wooden chair(1)"
+}
+WoodenChair {
+  translation -4.14 27.17 0
+  rotation 0 0 1 3.14159
+  name "wooden chair(6)"
+}
+WoodenChair {
+  translation -6.62 25.85 0
+  rotation 0 0 1 3.14159
+  name "wooden chair(2)"
+}
+WoodenChair {
+  translation -4.18 25.85 0
+  rotation 0 0 1 3.14159
+  name "wooden chair(5)"
+}
+WoodenChair {
+  translation -6.62 24.69 0
+  rotation 0 0 1 3.14159
+  name "wooden chair(3)"
+}
+WoodenChair {
+  translation -3.98 24.69 0
+  rotation 0 0 1 3.14159
+  name "wooden chair(4)"
+}
+TexturedBackgroundLight {
+}
+Armchair {
+  translation -27.52 4.74 0
+}
+Armchair {
+  translation -1.74 12.6 0
+  rotation 0 0 1 3.14159
+  name "armchair(2)"
+}
+Armchair {
+  translation 25.89 3.67 0
+  rotation 0 0 1 3.14159
+  name "armchair(5)"
+}
+Armchair {
+  translation 25.89 5.41 0
+  rotation 0 0 1 3.14159
+  name "armchair(6)"
+}
+Armchair {
+  translation 25.89 7.28 0
+  rotation 0 0 1 3.14159
+  name "armchair(7)"
+}
+Armchair {
+  translation 25.89 9.12 0
+  rotation 0 0 1 3.14159
+  name "armchair(8)"
+}
+OfficeChair {
+  hidden translation_1 0 0 0
+  hidden rotation_1 0 0 -1 0.0002002172964065406
+  translation -9.519999997184684 27.489999999976153 0.009871049824360767
+  rotation -0.007278951904778838 -0.9999735080784515 6.657463424680007e-07 0.00012652467107118932
+}
+OfficeChair {
+  hidden translation_1 0 0 1.1102230246251565e-16
+  hidden rotation_1 0 0 -1 0.0002002171544521737
+  translation -28.289999997184474 18.709999999976194 0.00987104982436074
+  rotation -0.007278951772157685 -0.9999735080794168 6.657447099994453e-07 0.0001265246710710292
+  name "office chair(1)"
+}
+Armchair {
+  translation -24.37 8.67 0
+  rotation 0 0 1 1.5708
+  name "armchair(1)"
+}
+Armchair {
+  translation -22.43 22.84 0
+  rotation 0 0 1 1.5708
+  name "armchair(3)"
+}
+Wall {
+  translation 0 25.85 0.460105
+  rotation 1 0 0 1.5708
+  size 0.2 1 10
+}
+Wall {
+  translation 0 15.82 0.460063
+  rotation 1 0 0 1.5708
+  name "wall(1)"
+  size 0.2 1 10
+}
+Wall {
+  translation 0 11.51 0.460051
+  rotation 1 0 0 1.5708
+  name "wall(2)"
+  size 0.2 1 10
+}
+Wall {
+  translation 10.67 -19.8 0.459935
+  rotation 1 0 0 1.5708
+  name "wall(11)"
+  size 0.2 1 10
+}
+Wall {
+  translation 0 1.61 0.460032
+  rotation -0.5773509358554485 0.5773489358556708 0.5773509358554485 -2.094395307179586
+  name "wall(3)"
+  size 0.2 1 10
+}
+Wall {
+  translation -8.94446e-06 10.24 0.460041
+  rotation -0.5773509358554485 0.5773489358556708 0.5773509358554485 -2.094395307179586
+  name "wall(6)"
+  size 0.2 1 10
+}
+Wall {
+  translation -20.07 21.85 0.460058
+  rotation -0.5773509358554485 0.5773489358556708 0.5773509358554485 -2.094395307179586
+  name "wall(8)"
+  size 0.2 1 10
+}
+Wall {
+  translation -20.07 21.85 0.460058
+  rotation 0.9351130202419243 0.25056300542381216 0.25056300542381216 1.63784
+  name "wall(9)"
+  size 0.2 1 10
+}
+Wall {
+  translation -10.7682 29.94 0.460083
+  rotation -1 -1.73632e-06 -2.17518e-07 -1.5708053071795867
+  name "wall(10)"
+  size 0.2 1 10
+}
+Wall {
+  translation -20.1 7.3 0.460041
+  rotation -0.5773509358554485 0.5773489358556708 0.5773509358554485 -2.094395307179586
+  name "wall(7)"
+  size 0.2 1 10
+}
+Wall {
+  translation -13.57 1.61 0.460033
+  rotation -0.5773509358554485 0.5773489358556708 0.5773509358554485 -2.094395307179586
+  name "wall(4)"
+  size 0.2 1 10
+}
+Wall {
+  translation -19.96 1.61 0.460032
+  rotation -0.5773509358554485 0.5773489358556708 0.5773509358554485 -2.094395307179586
+  name "wall(5)"
+  size 0.2 1 10
+}
+DEF OBSTACLE_1 Solid {
+  translation -14.0711 -12.6243 1
+  children [
+    DEF OBSTACLE_SHAPE Shape {
+      appearance PBRAppearance {
+        baseColor 0.898039 0.898039 0.898039
+        baseColorMap ImageTexture {
+          url [
+            "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/default/worlds/textures/rock.jpg"
+          ]
+        }
+        roughness 1
+        metalness 0
+        textureTransform TextureTransform {
+          scale 1.5 1.5
+        }
+      }
+      geometry Cylinder {
+        radius 0.4
+        subdivision 20
+      }
+    }
+  ]
+  name "obstacle"
+  boundingObject USE OBSTACLE_SHAPE
+}
+DEF OBSTACLE_1 Solid {
+  translation -3.6811 -6.4443 1
+  children [
+    DEF OBSTACLE_SHAPE Shape {
+      appearance PBRAppearance {
+        baseColor 0.898039 0.898039 0.898039
+        baseColorMap ImageTexture {
+          url [
+            "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/default/worlds/textures/rock.jpg"
+          ]
+        }
+        roughness 1
+        metalness 0
+        textureTransform TextureTransform {
+          scale 1.5 1.5
+        }
+      }
+      geometry Cylinder {
+        radius 0.4
+        subdivision 20
+      }
+    }
+  ]
+  name "obstacle(1)"
+  boundingObject USE OBSTACLE_SHAPE
+}
+DEF OBSTACLE_1 Solid {
+  translation 13.2689 4.3857 1
+  children [
+    DEF OBSTACLE_SHAPE Shape {
+      appearance PBRAppearance {
+        baseColor 0.898039 0.898039 0.898039
+        baseColorMap ImageTexture {
+          url [
+            "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/default/worlds/textures/rock.jpg"
+          ]
+        }
+        roughness 1
+        metalness 0
+        textureTransform TextureTransform {
+          scale 1.5 1.5
+        }
+      }
+      geometry Cylinder {
+        radius 0.4
+        subdivision 20
+      }
+    }
+  ]
+  name "obstacle(5)"
+  boundingObject USE OBSTACLE_SHAPE
+}
+DEF OBSTACLE_1 Solid {
+  translation 9.4389 26.4357 1
+  children [
+    DEF OBSTACLE_SHAPE Shape {
+      appearance PBRAppearance {
+        baseColor 0.898039 0.898039 0.898039
+        baseColorMap ImageTexture {
+          url [
+            "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/default/worlds/textures/rock.jpg"
+          ]
+        }
+        roughness 1
+        metalness 0
+        textureTransform TextureTransform {
+          scale 1.5 1.5
+        }
+      }
+      geometry Cylinder {
+        radius 0.4
+        subdivision 20
+      }
+    }
+  ]
+  name "obstacle(6)"
+  boundingObject USE OBSTACLE_SHAPE
+}
+DEF OBSTACLE_1 Solid {
+  translation -13.6311 0.0257 1
+  children [
+    DEF OBSTACLE_SHAPE Shape {
+      appearance PBRAppearance {
+        baseColor 0.898039 0.898039 0.898039
+        baseColorMap ImageTexture {
+          url [
+            "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/default/worlds/textures/rock.jpg"
+          ]
+        }
+        roughness 1
+        metalness 0
+        textureTransform TextureTransform {
+          scale 1.5 1.5
+        }
+      }
+      geometry Cylinder {
+        radius 0.4
+        subdivision 20
+      }
+    }
+  ]
+  name "obstacle(2)"
+  boundingObject USE OBSTACLE_SHAPE
+}
+DEF OBSTACLE_1 Solid {
+  translation -20.2311 -2.1143 1
+  children [
+    DEF OBSTACLE_SHAPE Shape {
+      appearance PBRAppearance {
+        baseColor 0.898039 0.898039 0.898039
+        baseColorMap ImageTexture {
+          url [
+            "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/default/worlds/textures/rock.jpg"
+          ]
+        }
+        roughness 1
+        metalness 0
+        textureTransform TextureTransform {
+          scale 1.5 1.5
+        }
+      }
+      geometry Cylinder {
+        radius 0.4
+        subdivision 20
+      }
+    }
+  ]
+  name "obstacle(3)"
+  boundingObject USE OBSTACLE_SHAPE
+}
+DEF OBSTACLE_9 Solid {
+  translation -21.5071 -19.6972 1
+  children [
+    USE OBSTACLE_SHAPE
+  ]
+  name "obstacle(9)"
+  boundingObject USE OBSTACLE_SHAPE
+}
+DEF OBSTACLE_10 Solid {
+  translation 6.6648 -23.9583 1
+  children [
+    USE OBSTACLE_SHAPE
+  ]
+  name "obstacle(10)"
+  boundingObject USE OBSTACLE_SHAPE
+}
+DEF OBSTACLE_10 Solid {
+  translation -14.6252 -27.9183 1
+  children [
+    USE OBSTACLE_SHAPE
+  ]
+  name "obstacle(4)"
+  boundingObject USE OBSTACLE_SHAPE
+}
+DEF OBSTACLE_23 Solid {
+  translation -27.097 -1.05726 1
+  children [
+    USE OBSTACLE_SHAPE
+  ]
+  name "obstacle(23)"
+  boundingObject USE OBSTACLE_SHAPE
+}
+DEF PIONEER_3AT Pioneer3at {
+  hidden position_0_0 8397.3303404963
+  hidden position_0_1 8438.257560604461
+  hidden position_0_2 8486.749071924345
+  hidden position_0_3 8532.233831518353
+  hidden linearVelocity_0 -0.49789917575713316 -0.23825377868323724 -7.916338024519752e-06
+  hidden angularVelocity_0 0.004920793563765825 -0.009586330657685055 -0.0002157255680427776
+  hidden translation_2 -0.1331 0.197 0.11
+  hidden rotation_2 -0.5469544000721147 0.5469465902837718 -0.6337904319400138 2.0118082081055433
+  hidden linearVelocity_2 -0.4973009820405897 -0.2378490902550431 0.0013506708019604251
+  hidden angularVelocity_2 2.162535040507489 -4.5201126921135115 0.0020943027261848793
+  hidden translation_3 -0.1331 -0.197 0.11
+  hidden rotation_3 -0.5886125109293415 0.58860831555055 0.554143991072898 4.153619244664027
+  hidden linearVelocity_3 -0.4971868136760266 -0.23786397008163274 0.0014592837186139553
+  hidden angularVelocity_3 2.1626732106113637 -4.5200234636963526 0.00417667814668556
+  hidden translation_4 0.1331 0.197 0.11
+  hidden rotation_4 -0.7040269064043713 0.7040193139475339 -0.09328944553128359 2.9555493723897226
+  hidden linearVelocity_4 -0.49722757260736694 -0.23790798191062262 -0.0014606218410223378
+  hidden angularVelocity_4 2.162587801205009 -4.520077729585429 0.00230941983494134
+  hidden translation_5 0.1331 -0.197 0.11
+  hidden rotation_5 0.6313764618633385 -0.6313714708768713 -0.4502597352281327 2.2954641628594548
+  hidden linearVelocity_5 -0.49703409853668845 -0.23792272403406758 -0.0013520117280578265
+  hidden angularVelocity_5 2.162595754142083 -4.520050990455514 0.0045963804215695386
+  translation -1.7529723126310903 26.53103985095594 0.0076116729071398215
+  rotation 0.0006367346654173854 0.00017735461948689704 0.9999997815571287 -2.6956487511915426
+  controller "pioneer3at_obstacle_avoidance_with_lidar"
+  extensionSlot [
+    SickLms291 {
+      translation 0.136 0 0.35
+    }
+  ]
+}
+Laptop {
+  hidden translation_1 -0.1 -0.014163216985450476 0.12998015065037288
+  hidden rotation_1 0.5775780199065096 -0.5768643976261169 -0.5776080831085494 2.095273959311569
+  translation 5.027021090628019 3.70838580534397 0.7088663010136945
+  rotation -0.0012569970909491295 -0.001671379696298118 -0.9999978132217211 1.3092696520261093
+  name "laptop(1)"
+}
+Laptop {
+  hidden translation_1 -0.1 -0.015155868992389495 0.12985439738758545
+  hidden rotation_1 0.57921950955509 -0.5735627660318865 -0.5792499574213298 2.1002355896787446
+  translation 8.09049322258933 3.4588980901515494 0.7088663009601127
+  rotation -0.0012534465404973867 -0.0017085999130192217 -0.9999977547765331 1.2892659824391146
+  name "laptop(2)"
+}
+MotorbikeSimple {
+  translation 28.955 -6.31319 0.25
+  rotation 0 0 1 2.0944
+}
